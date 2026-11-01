@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="IndiaEra.in — भारत की हर जरूरी खबर, आसान हिंदी में। राष्ट्रीय समाचार, टेक्नोलॉजी, बिजनेस, शिक्षा, खेल और विज्ञान।">
+  <title>IndiaEra.in — भारत की हर जरूरी खबर</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="topline"><div class="wrap topinner"><span>भारत की हर जरूरी खबर, आसान हिंदी में।</span><span id="today"></span></div></div>
+  <header class="header"><div class="wrap headinner">
+    <a class="brand" href="/"><span class="brandmark">IE</span><span>IndiaEra<span class="dot">.in</span><small>NEWS · KNOWLEDGE · INDIA</small></span></a>
+    <nav><a href="#latest">ताज़ा खबरें</a><a href="#categories">श्रेणियां</a><a href="#about">हमारे बारे में</a></nav>
+    <button class="menu" id="menuBtn" aria-label="मेन्यू">☰</button>
+  </div></header>
+  <main>
+    <section class="hero"><div class="wrap hero-grid">
+      <div><div class="eyebrow"><span class="pulse"></span> DAILY NEWS BRIEFING</div>
+        <h1>खबरें जो <em>मायने रखती हैं।</em></h1>
+        <p>भारत और दुनिया की महत्वपूर्ण खबरें — सरल हिंदी, साफ संदर्भ और मूल स्रोतों के साथ।</p>
+        <a class="hero-btn" href="#latest">आज की खबरें पढ़ें <span>→</span></a>
+      </div>
+      <div class="hero-note"><div class="note-icon">✦</div><strong>कम शोर। ज्यादा जानकारी।</strong><span>AI-सहायता से चुनी गई खबरें, मूल स्रोतों के लिंक के साथ।</span><small>हर दिन सुबह 8:00 बजे अपडेट</small></div>
+    </div></section>
+    <section class="wrap categories" id="categories">
+      <div class="section-head"><div><span class="kicker">EXPLORE</span><h2>श्रेणियां</h2></div></div>
+      <div class="chips" id="chips">
+        <button class="chip active" data-cat="सभी">सभी खबरें</button>
+        <button class="chip" data-cat="राष्ट्रीय">राष्ट्रीय</button><button class="chip" data-cat="राजनीति">राजनीति</button>
+        <button class="chip" data-cat="अर्थव्यवस्था">अर्थव्यवस्था</button><button class="chip" data-cat="टेक्नोलॉजी">टेक्नोलॉजी</button>
+        <button class="chip" data-cat="विज्ञान">विज्ञान</button><button class="chip" data-cat="शिक्षा">शिक्षा</button>
+        <button class="chip" data-cat="खेल">खेल</button><button class="chip" data-cat="दुनिया">दुनिया</button>
+      </div>
+    </section>
+    <section class="wrap news-section" id="latest">
+      <div class="section-head"><div><span class="kicker">THE LATEST</span><h2>आज की महत्वपूर्ण खबरें</h2><p id="updated" class="muted">समाचार अपडेट लोड हो रहा है…</p></div><button class="refresh" id="refreshBtn">↻ रिफ्रेश</button></div>
+      <div id="newsGrid" class="news-grid"><div class="loading">खबरें लोड हो रही हैं…</div></div>
+      <div id="empty" class="empty hidden">अभी इस श्रेणी में कोई खबर उपलब्ध नहीं है। दूसरी श्रेणी चुनें।</div>
+    </section>
+    <section class="wrap about" id="about"><div><span class="kicker">OUR PROMISE</span><h2>जानकारी पहले। सनसनी बाद में नहीं।</h2><p>IndiaEra का उद्देश्य महत्वपूर्ण खबरों को सरल हिंदी में समझाना है। हर खबर के साथ उपलब्ध मूल स्रोत दिए जाते हैं। AI से तैयार सारांश में त्रुटि हो सकती है; किसी महत्वपूर्ण निर्णय से पहले मूल स्रोत अवश्य पढ़ें।</p></div><div class="promise">भारत को जानो।<br><b>आगे बढ़ो।</b></div></section>
+  </main>
+  <footer><div class="wrap foot"><a class="brand footerbrand" href="/"><span class="brandmark">IE</span><span>IndiaEra<span class="dot">.in</span><small>NEWS · KNOWLEDGE · INDIA</small></span></a><span>© <span id="year"></span> IndiaEra.in</span><span>तथ्य-जांच और मूल स्रोतों को प्राथमिकता।</span></div></footer>
+  <script src="/app.js" defer></script>
+</body></html>

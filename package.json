@@ -1,0 +1,19 @@
+{
+  "name": "indiaera-news-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'Static site ready'",
+    "news:run": "netlify functions:invoke daily-news"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.5.0",
+    "@netlify/functions": "^4.2.0",
+    "fast-xml-parser": "^5.2.5"
+  },
+  "devDependencies": {
+    "netlify-cli": "^23.6.0"
+  }
+}
